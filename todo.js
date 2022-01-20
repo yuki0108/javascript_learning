@@ -25,6 +25,7 @@ function clickEnter() {
   const todoLi = document.createElement("li");
   // li要素に入れるテキストをinputに入力された値にする
   todoLi.innerText = document.getElementById("todo-input").value;
+  console.log(todoLi);
   // ul要素の中にliを入れる
   todoUl.appendChild(todoLi);
   // inputの中身を空にする
