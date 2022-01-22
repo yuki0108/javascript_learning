@@ -13,17 +13,16 @@
 
   // ulタグの取得
   const todoul = document.getElementById("todo-ul");
-
-  const create_li = document.createElement("li");
   
   // ボタン要素の取得
   const enterButton = document.getElementById("enter-button");
 
   enterButton.addEventListener("click", clickEnter);
 
-  function clickEnter() {
+function clickEnter() {
+    const create_li = document.createElement("li");
     console.log("クリックされました");
-  }
+}
 
 // // ul要素の取得
 // const todoUl = document.getElementById("todo-ul");
