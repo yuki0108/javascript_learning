@@ -12,7 +12,7 @@
   // };
 
   // ulタグの取得
-  const todoul = document.getElementById("todo-ul");
+  const todoUl = document.getElementById("todo-ul");
   
   // ボタン要素の取得
   const enterButton = document.getElementById("enter-button");
@@ -20,8 +20,16 @@
   enterButton.addEventListener("click", clickEnter);
 
 function clickEnter() {
-    const create_li = document.createElement("li");
-    console.log("クリックされました");
+  // li要素をJSで生成する
+  const create_li = document.createElement("li");
+  
+  // inputタグに入力されたタグvalueをliタグに入れる
+  create_li.innerText = document.getElementById("todo-input").value;
+
+  todoUl.appendChild(create_li);
+
+  console.log(todoUl);
+  
 }
 
 // // ul要素の取得
