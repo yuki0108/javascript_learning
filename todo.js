@@ -1,6 +1,29 @@
-let get_ul = document.getElementById("todo-ul");
+// let get_ul = document.getElementById("todo-ul");
 
-console.log(get_ul);
+// console.log(create_li);
+
+  
+  // const add_child = document.appendChild(create_li);
+
+  
+
+  // document.getElementById("enter-button").onclick = function () {
+  //   console.log(add_child);
+  // };
+
+  // ulタグの取得
+  const todoul = document.getElementById("todo-ul");
+
+  const create_li = document.createElement("li");
+  
+  // ボタン要素の取得
+  const enterButton = document.getElementById("enter-button");
+
+  enterButton.addEventListener("click", clickEnter);
+
+  function clickEnter() {
+    console.log("クリックされました");
+  }
 
 // // ul要素の取得
 // const todoUl = document.getElementById("todo-ul");
