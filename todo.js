@@ -12,8 +12,6 @@ const deleteButton = document.createElement("button");
 // deleteと入力
 deleteButton.innerHTML = "Delete";
 
-console.log(deleteButton);
-
 function clickEnter() {
   // li要素をJSで生成する
   const create_li = document.createElement("li");
@@ -24,7 +22,8 @@ function clickEnter() {
   todoUl.appendChild(create_li);
   create_li.appendChild(deleteButton);
 
-  console.log(todoUl);
-  
+  deleteButton.addEventListener("click", clickDelete);
+  function clickDelete() {
+    todoUl.removeChild(create_li);
+  }
 }
-
